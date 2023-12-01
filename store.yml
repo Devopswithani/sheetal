@@ -1,8 +1,13 @@
 ---
-  - hosts: all
+  - hosts: 172.31.44.228
     become: yes
     tasks:
     - name: i want to insall webserver.
       apt:
        name: apache2
-       state: presnet
+       state: present
+
+    - name: i want to insatll wget
+      apt: 
+       name: wget
+       state: present  
