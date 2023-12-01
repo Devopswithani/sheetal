@@ -4,6 +4,7 @@
     tasks:
     - name: i want to insall webserver.
       apt:
+       sudo: yes
        name: apache2
        state: present
 
