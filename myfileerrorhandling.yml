@@ -1,0 +1,17 @@
+---
+ - hosts: 172.31.33.145
+   tasks: 
+    - name: install git in a node
+      apt:
+       name: git
+       state: present
+
+    - name: install wget in a node
+      apt:
+       name: wget
+       state: present  
+
+    - name: install tree in a node
+      apt:
+       name: tree
+       state: present
