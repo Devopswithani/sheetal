@@ -1,5 +1,5 @@
 ---
-  - hosts: 172.31.44.228
+  - hosts: 172.31.32.24
     become: yes
     tasks:
     - name: i want to insall webserver.
