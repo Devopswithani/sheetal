@@ -1,5 +1,5 @@
 ---
- - hosts: 172.31.33.120
+ - hosts: 172.31.46.115
    tasks: 
     - name: install git in a node
       apt:
