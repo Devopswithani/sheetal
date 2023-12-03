@@ -1,0 +1,3 @@
+---
+- name: i want to create file on node file
+  file: /home/ubuntu/myfirstfile

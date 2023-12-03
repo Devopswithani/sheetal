@@ -2,12 +2,8 @@
 - hosts: 172.31.39.92
   become: yes
   tasks:
-  - name: install git
-    apt:
-      name: git 
-      state: present
-
-  - name: install wget
-    apt:
-     name: wget
-     state: present    
+  - include_tasks: myfile.yml
+  - name: install webserver
+  apt:
+  name: apache2
+  state: present
